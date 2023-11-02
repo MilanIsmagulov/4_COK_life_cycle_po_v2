@@ -298,19 +298,12 @@ body{
         height: 13vh;
     }
 
-
-    .main_window_top{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    .text_instructions{
+        width: 90%;
+        margin-top: 0;
     }
 
     
-
-    .text_instructions{
-        width: 100%;
-        margin-top: 0;
-    }
 
     .main_window_lower img{
         display: none;
