@@ -492,8 +492,7 @@ summary img{
 
 @media (max-width: 514px){
     .header{
-
-        height: 22vh;
+        height: 25vh;
     }
 }
 @media (max-width: 365px){
