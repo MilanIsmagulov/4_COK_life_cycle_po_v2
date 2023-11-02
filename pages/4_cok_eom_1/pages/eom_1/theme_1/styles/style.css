@@ -33,13 +33,15 @@ a:active{
 
 .header{
     background-color: black;
-    height: 75px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header h1{
+    width: 60%;
+
     color: white;
     margin-left: 25px;
     
@@ -47,12 +49,15 @@ a:active{
 
 .header a{
     text-decoration: none;
+    margin: 0.5vw;
     color: white;
     padding: 10px;
     border-radius: 25px;
-    border: 3px solid white;
-    margin-right: 30px;
-    
+    border: 1px solid white;    
+}
+
+.header a:last-child{
+    margin-right: 3vw;
 }
 
 .back_to_menu:hover{
@@ -220,7 +225,8 @@ details{
     background-color: #fff;
     padding: 15px;
     border-radius: 25px;
-    max-width: 72%;
+    max-width: 88%;
+    
 }
 
 details button{
@@ -228,6 +234,8 @@ details button{
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    width: 98%;
+    text-align: start;
 }
 
 ul:hover button{
@@ -240,17 +248,15 @@ ul:hover button{
 }
 
 summary{
-    
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     color: white;
     cursor: pointer;
+    text-align: center;
 }
 
 summary img{
-    padding-left: 15px;
     max-width: 65px;
 }
 
@@ -290,14 +296,14 @@ summary img{
     }
 
     summary{
-        margin-left: -15px;
+        text-align: center;
         align-items: center;
         justify-content: center;
     }
 
     .timing_menu{
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         max-width: 500px;
     }
 
@@ -305,6 +311,24 @@ summary img{
     .video_right{
         display: flex;
         justify-content: center;
+    }
+    details{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1180px){
+    .header{
+        height: 13vh;
+    }
+    details {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    details button{
+        text-align: center;
+        width: 98%;
     }
 }
 
@@ -319,11 +343,33 @@ summary img{
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1051px){
+    .header{
+        text-align: center;
+        height: 18vh;
+    }
+
+    .header h1{
+        margin: 1vh;
+        margin: 2vh;
+    }
+
+    .header a:last-child{
+        margin: 0;
+    }
+
+    .header{
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .link_backward{
+        margin-top: 2vh;
+    }
     .header{
         flex-direction: column;
         align-items: center;
-        height: 130px;
+        height: 15vh;
     }
 
     .video_content{
@@ -346,7 +392,34 @@ summary img{
     }
 }
 
-@media (max-width: 880px){
+@media (max-width: 821px){
+    .header{
+        text-align: center;
+        height: 18vh;
+    }
+
+    .header h1{
+        margin: 0.5vh;
+
+    }
+
+    .header a:last-child{
+        margin: 0;
+    }
+
+    .header{
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .video_side video {
+        margin-left: 3.5vh;
+        padding: 10px;
+        background-size: 250px;
+        width: 90%;
+        border-radius: 8px;
+    }
+
     progress{
         min-width: calc(10vw + 10px);
     }
@@ -370,15 +443,7 @@ summary img{
         flex-direction: column;
         align-items: center;
     }
-    .header{
-        align-items: center;
-        justify-content: flex-start;
-        height: 180px;
-    }
 
-    .header h1{
-        margin: 20px;
-    }
 
     details {
         margin-bottom: 15px;
@@ -386,7 +451,13 @@ summary img{
 
 }
 
+
 @media (max-width: 630px){
+    .header{
+
+        height: 20vh;
+    }
+
     progress{
         max-width: 220px;
         margin-bottom: 3px;
@@ -399,14 +470,11 @@ summary img{
     .header{
         align-items: center;
         justify-content: flex-start;
-        height: 160px;
+
     }
 
     .header h1{
-        margin-left: 25px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 25px;
+        margin: 1vh;
     }
 
     .change_speed{
@@ -422,10 +490,13 @@ summary img{
     }
 }
 
-@media (max-width: 365px){
+@media (max-width: 514px){
     .header{
-        height: 200px;
+
+        height: 22vh;
     }
+}
+@media (max-width: 365px){
 
     progress{
         max-width: 100px;
