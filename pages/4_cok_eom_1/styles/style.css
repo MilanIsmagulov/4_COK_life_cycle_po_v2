@@ -19,7 +19,7 @@ body{
 
 
 .black_header{
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -28,13 +28,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
+
 
 .black_header h1{
     margin-left: 3vw;
     width: 70%;
 }
+
 
 .black_header a{
     text-decoration: none;
@@ -43,8 +44,7 @@ body{
     text-align: center;
     border: solid 1px #fff;
     border-radius: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px;
     margin-right: 3vw;
     transition: all 0.3s;
 }
@@ -59,9 +59,9 @@ body{
     height: 25vh;
     background-color: #FF7276;
     border-radius: 30px;
-    padding: 1em;
+    padding: 0.5em;
     margin: 0.05em;
-    font-size: 1.25em;
+    font-size: inherit;
     font-weight: 700;
     color: #fff;
     border-style: none;
@@ -88,7 +88,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vw;
+    margin: 1vw;
     margin-top: 2vh;
     gap: 2rem;
 }
@@ -97,16 +97,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vw;
+    margin: 1vw;
     margin-top: 2vh;
     gap: 2rem;
 }
 
 .main_window_lower{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4vw;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 1vw;
     margin-top: 2vh;
     gap: 2rem;
 }
@@ -123,6 +123,7 @@ body{
     font-size: 25px;
     margin-top: 20px;
     font-weight: 700;
+    margin-left: 1vw;
 }
 
 .list_of_literature{
@@ -132,6 +133,7 @@ body{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
     border: solid 2px black;
     border-radius: 1000px;
     padding: 15px;
@@ -260,7 +262,7 @@ body{
 
     .list_of_literature{
         order: 2;
-        margin-bottom: 4vh;
+        margin-bottom: 1vh;
     }
 
 }
