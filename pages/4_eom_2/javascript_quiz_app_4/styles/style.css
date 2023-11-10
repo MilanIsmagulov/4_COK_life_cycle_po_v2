@@ -24,17 +24,23 @@ body{
     margin-right: 25px;
 }
 
+.black_header h1{
+    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
 .main_window{
     height: 100%;
     width: 100%;
 }
 
 .black_header{
-    padding: 30px;
+    padding: 0px 30px 0px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -243,6 +249,20 @@ input:disabled {
     }
     .answers_btn form {
         margin-bottom: 20px;
+    }
+
+    .black_header h1{
+        width: 70%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .black_header a{
+        min-width: 165px;
+        margin-left: 0;
+    }
+    .links_black_header{
+        min-width: 165px;
+        margin-left: 0;
     }
 }
 

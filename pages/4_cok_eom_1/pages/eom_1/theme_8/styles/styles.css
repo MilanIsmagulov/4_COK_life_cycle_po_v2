@@ -92,8 +92,6 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
     scroll-snap-align: start;
     padding: 35px;
     margin: 0px 25px 25px 0px;
@@ -475,6 +473,7 @@ font-size: 20px;
         margin-left: 0;
         margin-right: 0;
         width: 600px;
+        object-fit: contain;
     }
 
     .text_content{

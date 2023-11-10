@@ -80,11 +80,9 @@ body{
 
 .disign_table {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin: 15px;
+    width: 100%;
 }
 
 .first_td {
@@ -100,17 +98,14 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
     scroll-snap-align: start;
     padding: 35px;
-    margin: 0px 25px 25px 0px;
-    
+    margin: 0px 25px 25px 0px; 
 }
 
 .content img{
-    height: 300px;
-    width: auto;
+    width: 95%;
+    object-fit: cover;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -314,7 +309,6 @@ body{
 
 .wrapper_img {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -322,6 +316,13 @@ body{
     color: blue;
     margin-top: 50px;
 }
+
+.disign_table img {
+    display: flex;
+   flex-wrap: row;
+}
+
+
 
 .modal-content {
     position: relative;
@@ -482,7 +483,7 @@ font-size: 20px;
     .content img {
         margin-left: 0;
         margin-right: 0;
-        width: 600px;
+ 
     }
 
     .text_content{

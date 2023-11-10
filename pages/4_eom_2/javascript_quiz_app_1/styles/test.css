@@ -171,6 +171,7 @@ body{
     align-items: flex-end;
     justify-content: space-between;
     display: flex;
+    
 }
 
 .main_buttons button{
@@ -246,6 +247,12 @@ body{
     height: 40px;
 }
 
+.step_marker_and_buttons{
+    margin-top: 20vh;
+    padding-bottom: 50px;
+    width: 96%;
+}
+
 @media (max-width: 1180px) {
     body{
         width: 100%;
@@ -277,10 +284,10 @@ body{
     .main_buttons button {
         width: 130px;
     }
-}
-
-.step_marker_and_buttons{
-    margin-top: 25px;
-    padding-bottom: 50px;
-    width: 96%;
+    .step_marker_and_buttons{
+        margin-top: 10vh;
+        margin-bottom: 25px;
+        padding-bottom: 50px;
+        width: 96%;
+    }
 }

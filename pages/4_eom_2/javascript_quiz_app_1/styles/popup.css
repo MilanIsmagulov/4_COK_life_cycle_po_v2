@@ -191,11 +191,8 @@
 }
 
 .theory_eom{
-    flex-direction: column;
-    height: 400px;
-    overflow-y: auto;
+    flex-direction: row;
     margin-right: 25px;
-    
 }
 
 .image_part{
@@ -289,6 +286,9 @@
         height: 120px;
     }
 
+    .theory_eom {
+        flex-direction: column;
+    }
 
     .black_header h1{
         width: 50%;
@@ -298,9 +298,6 @@
         display: flex;
     }
 
-    .theory_eom{
-        height: 400px;
-    }
     .content{
         margin-right: 0;
     }

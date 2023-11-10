@@ -192,8 +192,6 @@
 
 .theory_eom{
     flex-direction: column;
-    height: 540px;
-    overflow-y: auto;
     margin-right: 25px;
     
 }
@@ -300,9 +298,11 @@
         display: flex;
     }
 
-    .theory_eom{
-        height: 400px;
+    .step_marker_and_buttons{
+        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
+
     .content{
         margin-right: 0;
     }
