@@ -25,18 +25,19 @@ let popupsPart = document.querySelector('#popup_answers_1');
 let questionsPlaceAdd = document.querySelector('#question_number_1')
 let mainWindow = document.querySelector('.main_window')
 
+
 // Массив с вопросами
 let mainQuestions = [
     {
-        text: 'Укажите, какие из перечисленных процессов относятся к группе организационных в соответствии со стандартом ISO/IEC 12207:',
-        right: [2,3],
-        type: 3,
+        text: 'Укажите, какие стадии включает жизненный цикл программного обеспечения:',
+        right: [3],
+        type: 1,
         points: 100,
-        answers: ['приобретение', 'поставка', 'создание инфраструктуры', 'разработка','обучение'],
+        answers: ['Анализ требований, проектирование, реализация', 'Проектирование, внедрение, эксплуатация', 'Анализ требований, реализация, эксплуатация','Анализ требований, проектирование, реализация, внедрение, эксплуатация'],
     },
 ];
 
-let numberOfQuestion = 6; 
+let numberOfQuestion = 4; 
 let numberOfQuestionSum = 13;
 let numberOfEOM = 2;
 

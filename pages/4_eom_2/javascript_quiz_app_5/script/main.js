@@ -37,7 +37,7 @@ let mainQuestions = [
 ];
 
 let numberOfQuestion = 5; 
-let numberOfQuestionSum = 10;
+let numberOfQuestionSum = 13;
 let numberOfEOM = 2;
 
 

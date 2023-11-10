@@ -30,7 +30,7 @@ body{
 
 .step_markers{
     position: absolute;
-    width: 270px;
+    width: 40%;
     left: 55px;
 }
 
@@ -357,8 +357,12 @@ body{
         flex-direction: column;
     }
 
+    .questions {
+        font-size: 25px;
+    }
+
     .step_markers{
-        width: 240px;
+        width: 320px;
         left: 0;
         position: relative;
     }
