@@ -7,16 +7,27 @@
     font-family: 'Montserrat' , sans-serif;
     box-sizing: border-box;
 }
-
+html{
+    width: 100vw;
+    height: 100vh;
+}
 a{
     text-decoration: none;
 }
 
 body{
     background: #fff;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+}
+
+.correct{
+    background-color: rgb(189, 255, 189);
+}
+
+.incorrect{
+    background-color: rgb(255, 185, 185);
 }
 
 .main_window{
@@ -185,7 +196,13 @@ input:disabled {
         width: 100%;
 
     }
+    .black_header{
+        height: 180px;
+    }
 
+    .black_header h1{
+        width: 60%;
+    }
     .answers_btn form {
         width: 700px;
         
@@ -197,6 +214,7 @@ input:disabled {
     .choices_div2{
         width: 700px;
     }
+    
     .question_part #question {
         padding: 10px;
         margin: 10px;

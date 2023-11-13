@@ -59,12 +59,10 @@ body{
 
 .quiz_window p{
     font-size: 30px;
-
+    padding: 25px;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
-
-
 
 .quiz_window p span{
     color: #000;
@@ -78,17 +76,13 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+
     margin-left: 25px;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 .questions p{
     font-size: 30px;
     padding: 25px;
-    padding-bottom: 10px;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
@@ -102,23 +96,19 @@ body{
 }
 
 .window_header{
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 25px;
 }
 
 .answers_btn{
     width: 100%;
     display: flex;
-    
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.answers_btn img{
-    height: 500px;
-    width: 510px;
-    margin-left: 100px;
 }
 
 .answers_btn form{
@@ -128,7 +118,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .answers_btn input{
@@ -153,6 +143,7 @@ body{
     'GRAD' 0,
     'opsz' 48
 }
+
 
 
 .number_marker{
@@ -184,6 +175,14 @@ body{
     display: flex;
 }
 
+
+.small{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    height: 85px;
+}
+
 .main_buttons button{
     height: 50px;
     width: 150px;
@@ -196,6 +195,21 @@ body{
     border-radius: 35px;
     cursor: pointer;
     transition: all 0.3s;
+    
+}
+
+.main_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main_buttons p{
+    margin-left: 50px;
+    font-size: 25px;
+    color: #05050580;
+    font-weight: 600;
 }
 
 .main_buttons button:active{
@@ -206,29 +220,29 @@ body{
     display: flex;
     align-items: center;
     border: solid 0px #00000080;
-    width: 100%;
-    margin: 5px;
-    height: 100px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin: 10px;
     border-radius: 25px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     
 }
 
 .answers_btn form div input{
-    min-height: 40px;
-    min-width: 40px;
-    max-height: 100px;
-    max-width: 41px;
+    height: 45px;
+    min-width: 75px;
+    max-width: 76px;
 }
 
 .answers_btn form{
     border-radius: 35px;
-    width: 70%;
+    max-width: 90%;
 }
 
 .answers_btn form div p{
     font-size: 25px;
-
     font-weight: 600;
     color: #000;
 }
@@ -253,52 +267,37 @@ body{
     cursor: no-drop;
 }
 
-#answer_img_4{
-    width: 200px;
-}
-
-
 .answer_div img{
-    min-height: 70px;
-    width: 140px;
     margin-left: 25px;
     height: 40px;
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form div {
-        width: 700px;
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 0px;
-    }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
+.disabled_button{
+    display: none;
 }
 
-.step_marker_and_buttons{
-    padding-top: 20px;
-    padding-bottom: 30px;
+.close_popup_button{
+    border: 0;
+    background-color: #fff;
 }
+
+.questions{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 114, 118);
+}
+
+.main_buttons button{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    border: 0;
+    background: rgb(0, 114, 192);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+

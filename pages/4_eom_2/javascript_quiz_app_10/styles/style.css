@@ -356,6 +356,50 @@ input:disabled {
     font-weight: 500;
 }
 
+@media (max-width: 1180px) {
+    .black_header{
+        height: 120px;
+    }
+
+
+    .black_header h1{
+        width: 50%;
+    }
+
+    .step_marker_and_buttons{
+        display: flex;
+    }
+
+    .theory_eom{
+        height: 400px;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+
+        height: 100%;
+    }
+    .popup_body{
+        height: 50vh;
+    }
+
+    .popup_text{
+        display: flex;
+        height: 500px;
+    }
+    .black_header h1{
+        width: 60%;
+    }
+    .black_header a{
+        margin-left: 0;
+    }
+    .links_black_header{
+        min-width: 165px;
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 820px) {
     .black_header{
         height: 150px;

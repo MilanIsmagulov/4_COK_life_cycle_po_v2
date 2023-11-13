@@ -167,11 +167,11 @@ body{
     'GRAD' 200,
     'opsz' 20
   }
-
+/* 
 .bottom_part{
     position: absolute;
     bottom: 50px;
-}
+} */
 
 .step_marker_and_buttons{
     display: flex;
@@ -208,7 +208,14 @@ body{
     color: #000;
 }
 
+.step_marker_and_buttons {
+    margin-top: 40vh;
+}
+
 @media (max-width: 1180px) {
+    .links_black_header{
+        min-width: 165px;
+    }
     .choices_div2{
         width: 700px;
     }
@@ -222,7 +229,12 @@ body{
         padding-bottom: 50px;
     }
 
+    .questions input{
+        width: 90%;
+    }
+
     .step_marker_and_buttons {
+        margin-top: 30vh;
         width: 88vw;
     }
 

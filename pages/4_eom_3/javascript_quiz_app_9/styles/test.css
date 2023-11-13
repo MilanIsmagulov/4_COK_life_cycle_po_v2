@@ -76,9 +76,8 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin: 25px;
+
+    margin-left: 25px;
 }
 
 .questions p{
@@ -97,9 +96,11 @@ body{
 }
 
 .window_header{
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 25px;
 }
 
 .answers_btn{
@@ -144,6 +145,7 @@ body{
 }
 
 
+
 .number_marker{
     display: flex;
     flex-direction: row;
@@ -173,6 +175,14 @@ body{
     display: flex;
 }
 
+
+.small{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    height: 85px;
+}
+
 .main_buttons button{
     height: 50px;
     width: 150px;
@@ -185,6 +195,21 @@ body{
     border-radius: 35px;
     cursor: pointer;
     transition: all 0.3s;
+    
+}
+
+.main_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main_buttons p{
+    margin-left: 50px;
+    font-size: 25px;
+    color: #05050580;
+    font-weight: 600;
 }
 
 .main_buttons button:active{
@@ -195,24 +220,25 @@ body{
     display: flex;
     align-items: center;
     border: solid 0px #00000080;
-    width: 1000px;
-    margin: 15px;
-    height: 100px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin: 10px;
     border-radius: 25px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     
 }
 
 .answers_btn form div input{
-    min-height: 40px;
-    min-width: 40px;
-    max-height: 41px;
-    max-width: 41px;
+    height: 45px;
+    min-width: 75px;
+    max-width: 76px;
 }
 
 .answers_btn form{
     border-radius: 35px;
-    width: 70%;
+    max-width: 90%;
 }
 
 .answers_btn form div p{
@@ -246,41 +272,32 @@ body{
     height: 40px;
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form div {
-        width: 700px;
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 0px;
-    }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
+.disabled_button{
+    display: none;
 }
 
-.step_marker_and_buttons{
-    position: absolute;
-    bottom: 50px;
-    width: 96%;
+.close_popup_button{
+    border: 0;
+    background-color: #fff;
 }
+
+.questions{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 114, 118);
+}
+
+.main_buttons button{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    border: 0;
+    background: rgb(0, 114, 192);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+

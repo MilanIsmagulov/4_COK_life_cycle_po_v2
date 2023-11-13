@@ -4,6 +4,7 @@ checkBtn2.classList.add('disabled_button')
 let checkBtn3 = document.querySelector('#check_button_3')
 checkBtn3.classList.add('disabled_button')
 
+let numberOfEOM = 3;
 let numberOfQuestion = 5; 
 let numberOfQuestionSum = 13;
 
@@ -40,16 +41,46 @@ checkBtn.addEventListener('click', function(){
             input.classList.add('correct');
             checkBtn.classList.add('disabled_button')
             checkBtn2.classList.remove('disabled_button')
-            checkBtn3.classList.remove('disabled_button')
+            if (numberOfEOM != 3){
+                checkBtn3.classList.remove('disabled_button')
+            }
             localStorage.setItem('answer_'+numberOfQuestion, JSON.stringify({questionPlace: true}));
 
         } else {
             input.classList.add('incorrect');
             checkBtn.classList.add('disabled_button')
             checkBtn2.classList.remove('disabled_button')
-            checkBtn3.classList.remove('disabled_button')
+            if (numberOfEOM != 3){
+                checkBtn3.classList.remove('disabled_button')
+            }
             localStorage.setItem('answer_'+numberOfQuestion, JSON.stringify({questionPlace: false}));
         };
         i++;
     }
 });
+
+function openPopUp(){
+    let popUpWindow = document.querySelector('#popup1')
+    popUpWindow.classList.remove('close');
+}
+
+function closePopUp(){
+    let popUpWindow = document.querySelector('#popup1')
+    popUpWindow.classList.add('close');
+}
+
+let backBtn = document.querySelector('#check_button_0')
+let nextBtn = document.querySelector('#check_button_2')
+
+if (numberOfQuestion === 1){
+    backBtn.classList.add('disabled_button');
+} else {
+    backBtn.setAttribute('onclick', `location.href='../javascript_quiz_app_${numberOfQuestion-1}/index.html'`);
+    backBtn.classList.remove('disabled_button');
+}
+
+if (numberOfQuestion !== numberOfQuestionSum){
+    nextBtn.setAttribute('onclick', `location.href='../javascript_quiz_app_${numberOfQuestion+1}/index.html'`);
+} else {
+    nextBtn.setAttribute('onclick', `location.href='../javascript_result_page/index.html'`);
+}
