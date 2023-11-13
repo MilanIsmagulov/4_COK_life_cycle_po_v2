@@ -472,8 +472,13 @@ font-size: 20px;
     }
 }
 
-@media (max-width: 1131px){
- 
+@media (max-width: 1180px){
+    .content img{
+        width: 95%;
+        object-fit: contain;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
       .content_img {
         margin-left: 0;
         margin-right: 0;
@@ -484,6 +489,14 @@ font-size: 20px;
         margin-left: 0;
         margin-right: 0;
  
+    }
+
+    .first_td{
+        margin-bottom: 25px;
+    }
+
+    .disign_table{
+        flex-direction: column;
     }
 
     .text_content{
