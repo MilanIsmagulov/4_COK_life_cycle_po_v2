@@ -11,7 +11,10 @@
 body{
     background: #f4f4f4;
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 a{
@@ -250,97 +253,6 @@ a{
     margin-left: 75px;
 }
 
-
-/* Popup window */
-
-.popup {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #00000050;
-    top: 0;
-    left: 0;
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.popup_body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 20px;
-}
-
-.popup_content {
-    background-color: white;
-    color: black;
-    max-width: 700px;
-    border-radius: 15px;
-    padding: 25px;
-}
-
-.popup_header {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    color: rgb(255, 113, 117);
-    font-size: 25px;
-}
-
-.close_popup {
-    font-size: 25px;
-    margin-right: 5px;
-}
-
-.close_popup:active {
-    color: rgb(255, 113, 117);
-}
-
-.popup_text {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
-.popup::-webkit-scrollbar {
-    width: 0;
-}
-
-.popup:target{
-    opacity: 1;
-    visibility: visible;
-}
-
-
-.main_viewport::-webkit-scrollbar-track
-{
-	background-color: #dadada;
-	border-radius: 0px;
-    padding: 15px;
-    width: 25px;
-}
-
-.main_viewport::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
-    padding: 15px;
-    width: 15px;
-}
-
-.main_viewport::-webkit-scrollbar-thumb
-{
-	background-color: rgba(0, 0, 0, .2);
-	border-radius: 10px;
-	background-image: rgba(0, 0, 0, .2);
-    width: 15px;
-}
-
-
 @media (max-width: 1580px){
     .main_container{
         background-image: url(../content/Fon2.png);
@@ -548,6 +460,70 @@ a{
     }
 }
 
+/* Popup window */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    top: 0;
+    left: 0;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.popup_body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.popup_content {
+    background-color: white;
+    color: black;
+    max-width: 1000px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.popup_header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    color: rgb(255, 113, 117);
+    font-size: 25px;
+}
+
+.close_popup {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.close_popup:active {
+    color: rgb(255, 113, 117);
+}
+
+.popup_text {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.popup::-webkit-scrollbar {
+    width: 0;
+}
+
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
 @media (max-width: 520px){
     .popup_text{
         flex-direction: column;
@@ -556,5 +532,29 @@ a{
         margin-left: 0;
         margin-top: 15px;
     }
+}
+
+.main_viewport::-webkit-scrollbar-track
+{
+	background-color: #dadada;
+	border-radius: 0px;
+    padding: 15px;
+    width: 25px;
+}
+
+.main_viewport::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+    padding: 15px;
+    width: 15px;
+}
+
+.main_viewport::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	background-image: rgba(0, 0, 0, .2);
+    width: 15px;
 }
 
